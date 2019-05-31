@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_width="fill_parent">
+			
+			<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radio_group"
+				android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RadioButton android:id="@+id/radio_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit"
+		android:textSize="14dp"
+					android:checked="true"
+        />
+    <RadioButton android:id="@+id/radio_debit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+        android:text="Debit"
+					android:textSize="14dp"
+     />
+				    <RadioButton android:id="@+id/radio_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+        android:text="All"
+					android:textSize="14dp"
+     />
+</RadioGroup>
+
+			<LinearLayout
+				 android:id="@+id/layout_FromDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight=".8"
+                        android:padding="2dp"
+                        android:text="From Date"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                    <EditText
+                        android:id="@+id/editFromDate"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/common_edittext"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:hint="dd/MMM/yyyy"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingStart="8dp"
+                        android:singleLine="true"
+                        android:textSize="14dp" />
+                    <ImageButton
+                        android:id="@+id/imgbtnFromDate"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight=".2"
+                        android:background="@drawable/calender_res"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+			<LinearLayout
+				 android:id="@+id/layout_ToDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight=".8"
+                        android:padding="2dp"
+                        android:text="To Date"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                    <EditText
+                        android:id="@+id/editToDate"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/common_edittext"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:hint="dd/MMM/yyyy"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingStart="8dp"
+                        android:singleLine="true"
+                        android:textSize="14dp" />
+                    <ImageButton
+                        android:id="@+id/imgbtnToDate"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight=".2"
+                        android:background="@drawable/calender_res"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+			
+			<LinearLayout
+				 android:id="@+id/layout_Btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+						<Button
+					android:theme="@style/MyButton"
+				android:textColor="@color/white"
+				android:drawableLeft="@drawable/arrow_left"
+        android:text="Back"
+      android:layout_width="0dp"
+					android:visibility="gone"
+        android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"	
+					android:layout_weight="1"
+				android:layout_marginTop="20dp"
+        android:id="@+id/btnBack" />
+                  
+                   	<Button
+					android:theme="@style/MyButton"
+				android:textColor="@color/white"
+					android:layout_weight="1"
+				android:drawableLeft="@drawable/arrow_down"
+        android:text="View"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"	
+				android:layout_marginTop="20dp"
+        android:id="@+id/btnView" />
+                </LinearLayout>
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+					 android:id="@+id/txtTotalCredit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                  
+                    android:text="Credit : 0"
+					        android:textSize="18dp" 
+                    android:textColor="@color/green" />
+               
+                <TextView
+                    android:id="@+id/txtTotalDebit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                   
+                    android:text="Debit : 0"
+					 android:textSize="18dp" 
+                    android:textColor="@color/red" />
+				<TextView
+					android:id="@+id/txtTotalBal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                  
+                    android:text="Bal. : 0"
+					android:textStyle="bold"
+					 android:textSize="18dp" 
+                    android:textColor="@color/black" />
+               
+               
+            </LinearLayout>
+	        <TextView
+                    android:id="@+id/txtCurrentCycle"
+                    android:layout_width="match_parent"
+                   
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/recycleHeadColor"
+                    android:gravity="center_horizontal"
+                    android:text="Transaction Details"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recylerview_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+			
+		
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

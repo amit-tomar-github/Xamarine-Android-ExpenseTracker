@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="colorPrimary">#592484</color>
+  <color name="colorPrimaryDark">#2a0056</color>
+  <color name="colorAccent">#592484</color>
+  <color name="secondaryLightColor">#9162e4</color>
+
+  <color name="splash_background">#f48fb1</color>
+  <color name="recycleHeadColor">#caae53</color>
+  <color name="recycleColor">#ffe082</color>
+  <color name="buttonColor">#A1DBE9</color>
+  <color name="green">#5BB85D</color>
+  <color name="indigo">#4b0082</color>
+  <color name="pink">#FF1493</color>
+  <color name="passwordButtonColor">#EFAD4D</color>
+  <color name="fbloginButtonColor">#3B5997</color>
+  <color name="gmailloginButtonColor">#DF554A</color>
+  <color name="createAccountButtonColor">#5BC0DE</color>
+  <color name="colorGold">#FFDF00</color>
+  <color name="fade_white">#FAFAFA</color>
+  <color name="blue" type="color">#FF33B5E5</color>
+  <color name="purple" type="color">#FFAA66CC</color>
+  <color name="light_green" type="color">#FF99CC00</color>
+  <color name="orange" type="color">#FFFFBB33</color>
+  <color name="red" type="color">#FFFF4444</color>
+  <color name="darkblue" type="color">#FF0099CC</color>
+  <color name="darkpurple" type="color">#FF9933CC</color>
+  <color name="darkgreen" type="color">#FF669900</color>
+  <color name="darkorange" type="color">#FFFF8800</color>
+  <color name="darkred" type="color">#FFCC0000</color>
+  <color name="skyblue" type="color">#2196f3</color>
+  <color name="blue_pressed">#ff0099cc</color>
+  <color name="blue_normal">#ff33b5e5</color>
+  <color name="purple_progress">#ffaa66cc</color>
+  <color name="red_error">#ffff4444</color>
+  <color name="translucent_dark">#99000000</color>
+  <color name="white">#ffffffff</color>
+  <color name="theme_translucent">#ffa9a9a9</color>
+  <color name="transparent1">#00000000</color>
+  <color name="translucent">#bbffffff</color>
+  <color name="grey">#f3f3f3f3</color>
+  <color name="dark_grey">#ffaeaeae</color>
+  <color name="dark_custom_grey">#2d2d2d</color>
+  <color name="black">#ff000000</color>
+  <color name="cyan">#009688</color>
+  <color name="dark_violet">#530aab</color>
+  <color name="toast">#ddaaaaaa</color>
+  <color name="bronze">#A57164</color>
+  <color name="sky">#3391FF</color>
+  <color name="sky_blue_dark">#00628c</color>
+  <color name="light_red">#FF3358</color>
+  <color name="yellow">#FFE033</color>
+  <color name="album_title">#4c4c4c</color>
+  <color name="bg_row_background">#fa315b</color>
+  <color name="item_name">#535353</color>
+  <color name="description">#a9a9a9</color>
+
+</resources>
