@@ -12,6 +12,26 @@
             android:orientation="vertical"
             android:layout_width="fill_parent">
 			<TextView
+				 android:id="@+id/txtBal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Total Balance"
+				android:layout_marginTop="10dp"
+				android:gravity="center_horizontal"
+				android:textColor="@color/black"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+		<Button
+				android:drawableLeft="@drawable/currency_inr"
+        android:text="0"			
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"	
+				android:theme="@style/MyButton"
+				android:textColor="@color/white"
+        android:id="@+id/btnTotalBalance" />
+			<TextView
 				 android:id="@+id/txtCurrentMonth"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

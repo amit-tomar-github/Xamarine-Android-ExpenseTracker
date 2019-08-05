@@ -21,7 +21,7 @@ namespace ExpenseTracker.ActivityClass
         CreditDebitDb creditDebitDb;
 
         TextView txtCurrentMonth;
-        Button btnCredit, btnDebit, btnViewHistory, btnBal;
+        Button btnCredit, btnDebit, btnViewHistory, btnBal,btnTotalBal;
         public HomeFragment()
         {
             try
@@ -61,6 +61,8 @@ namespace ExpenseTracker.ActivityClass
 
                 btnBal = FragmentView.FindViewById<Button>(Resource.Id.btnBalance);
                 btnBal.Click += BtnBal_Click;
+
+                btnTotalBal = FragmentView.FindViewById<Button>(Resource.Id.btnTotalBalance);
 
                 btnViewHistory = FragmentView.FindViewById<Button>(Resource.Id.btnViewHistory);
                 btnViewHistory.Click += btnViewHisotry_Click;
@@ -155,6 +157,9 @@ namespace ExpenseTracker.ActivityClass
                 btnDebit.Text = Math.Round(DebitAmount, 2).ToString();
 
                 btnBal.Text = Math.Round((CreditAmount - DebitAmount), 2).ToString();
+
+                string TotalBalance = await Task.Run(() => creditDebitDb.GetTotalCreditAmount());
+                btnTotalBal.Text = TotalBalance;
 
                 progressDialog.Hide();
 
